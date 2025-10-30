@@ -1,68 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beestroh Video Collection</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ron Robinson | Audio & Video Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f9f9f9;
-      color: #222;
-      text-align: center;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     h1 {
-      margin-bottom: 40px;
+      font-size: 2em;
+      margin-bottom: 30px;
+      text-align: center;
     }
-    h2 {
-      margin-top: 40px;
-      margin-bottom: 20px;
-    }
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 ratio */
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      margin: 0 auto 40px auto;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 40px;
       width: 100%;
-      height: 100%;
-      border: none;
+      max-width: 1200px;
     }
-    hr {
-      margin: 60px 0;
+    .video-card {
+      background-color: #1b1b1b;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 250px;
       border: none;
-      border-top: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    h3 {
+      margin-top: 15px;
+      font-size: 1.1em;
+      color: #ffcc00;
+    }
+    @media (max-width: 600px) {
+      iframe {
+        height: 200px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Beestroh Video Collection</h1>
+  <h1>Ron Robinson | Audio & Video Production Samples</h1>
 
-  <!-- Z RO Video -->
-  <h2>Z RO Video</h2>
-  <div class="video-container">
-    <iframe src="https://drive.google.com/file/d/1x0WheGBSGnvAn_7jcALFsJ7gyMVSQsah/preview" 
-            allow="autoplay; fullscreen" allowfullscreen>
-    </iframe>
+  <div class="grid">
+    <div class="video-card">
+      <h3>Commercial & Voice Over Sample</h3>
+      <iframe src="https://drive.google.com/file/d/1hm28M83EBWIVc-YPsQanAtJaOBjAk37h/preview" allow="autoplay"></iframe>
+    </div>
+
+    <div class="video-card">
+      <h3>Video Editing, Commercial Production & Voiceover</h3>
+      <iframe src="https://drive.google.com/file/d/1x0WheGBSGnvAn_7jcALFsJ7gyMVSQsah/preview" allow="autoplay"></iframe>
+    </div>
+
+    <div class="video-card">
+      <h3>Podcast & Radio Show Editing (The Ed Lover Experience)</h3>
+      <iframe src="https://drive.google.com/file/d/1o20VPfTTT3E2B7Jds4lkIdLWAhL71Y3A/preview" allow="autoplay"></iframe>
+    </div>
+
+    <div class="video-card">
+      <h3>Social Media Video Content Editing</h3>
+      <iframe src="https://drive.google.com/file/d/1h5rX5buTUiSrdIcsEe4rx70b6vA23KDM/preview" allow="autoplay"></iframe>
+    </div>
   </div>
-
-  <hr>
-
-  <!-- Daily Beestroh Video -->
-  <h2>Daily Beestroh Video</h2>
-  <div class="video-container">
-    <iframe src="https://drive.google.com/file/d/1h5rX5buTUiSrdIcsEe4rx70b6vA23KDM/preview" 
-            allow="autoplay; fullscreen" allowfullscreen>
-    </iframe>
-  </div>
-
 </body>
 </html>
 
