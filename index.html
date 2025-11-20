@@ -1,1 +1,115 @@
-<!-- Ed Lover Radio Show sample --> <div class="portfolio-sample"> <h3>Ed Lover Radio Show sample</h3> <p>Dynamic radio show edit highlighting pacing and clarity.</p> <audio controls> <source src="assets/Ed Lover Radio Show editing sample.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio> <a href="assets/Ed Lover Radio Show editing sample.mp3" class="download-btn" download>Download</a> </div> <!-- R Robinson Voiceover and production sample --> <div class="portfolio-sample"> <h3>R Robinson Voiceover and production sample</h3> <p>Display of vocal talent and production technique.</p> <audio controls> <source src="assets/R ROBINSON VO and Prod sample 2 Hurt 911.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio> <a href="assets/R ROBINSON VO and Prod sample 2 Hurt 911.mp3" class="download-btn" download>Download</a> </div> <!-- Podcast Edit sample --> <div class="portfolio-sample"> <h3>Podcast Edit sample</h3> <p>Display of Podcast pacing / production technique.</p> <audio controls> <source src="assets/PODCAST EDIT SMP _mp3.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio> <a href="assets/PODCAST EDIT SMP _mp3.mp3" class="download-btn" download>Download</a> </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ron Robinson Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #ffcc00;
+      font-size: 2.8em;
+      text-shadow: 1px 1px 5px #000;
+    }
+    .portfolio-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .portfolio-sample {
+      background: linear-gradient(145deg, #1b1b1b, #2a2a2a);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .portfolio-sample:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.8);
+    }
+    .portfolio-sample h3 {
+      margin-top: 0;
+      color: #ffcc00;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    .portfolio-sample p {
+      text-align: center;
+      color: #ddd;
+      font-size: 0.95em;
+      margin-bottom: 15px;
+    }
+    audio {
+      width: 100%;
+      border-radius: 8px;
+      outline: none;
+      background-color: #333;
+      margin-bottom: 10px;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 8px 15px;
+      background-color: #ffcc00;
+      color: #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+    .download-btn:hover {
+      background-color: #e6b800;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <h1>Ron Robinson - Audio & Multimedia Portfolio</h1>
+
+  <div class="portfolio-container">
+
+    <!-- Ed Lover Radio Show sample -->
+    <div class="portfolio-sample">
+      <h3>Ed Lover Radio Show sample</h3>
+      <p>Dynamic radio show edit highlighting pacing and clarity.</p>
+      <audio controls>
+        <source src="assets/Ed Lover Radio Show editing sample.mp3" type="audio/mpeg">
+      </audio>
+      <a href="assets/Ed Lover Radio Show editing sample.mp3" class="download-btn" download>Download</a>
+    </div>
+
+    <!-- R Robinson Voiceover and production sample -->
+    <div class="portfolio-sample">
+      <h3>R Robinson Voiceover and production sample</h3>
+      <p>Display of vocal talent and production technique.</p>
+      <audio controls>
+        <source src="assets/R ROBINSON VO and Prod sample 2 Hurt 911.mp3" type="audio/mpeg">
+      </audio>
+      <a href="assets/R ROBINSON VO and Prod sample 2 Hurt 911.mp3" class="download-btn" download>Download</a>
+    </div>
+
+    <!-- Podcast Edit sample -->
+    <div class="portfolio-sample">
+      <h3>Podcast Edit sample</h3>
+      <p>Display of Podcast pacing / production technique.</p>
+      <audio controls>
+        <source src="assets/PODCAST EDIT SMP _mp3.mp3" type="audio/mpeg">
+      </audio>
+      <a href="assets/PODCAST EDIT SMP _mp3.mp3" class="download-btn" download>Download</a>
+    </div>
+
+  </div>
+</body>
+</html>
